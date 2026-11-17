@@ -4,23 +4,19 @@ HackPad is a custom-built 9-key macropad featuring a rotary encoder, an OLED dis
 
 The project was designed from scratch, including the schematic, PCB layout, custom PCB artwork, enclosure, and firmware.
 
-## Features
+#novemer 15 2026   selected components and completed pcb designing succesfully
+time spent - 4 hours 
 
-- 9 mechanical keyboard switches in a 3×3 layout
-- Rotary encoder with push-button functionality
-- 0.91-inch I2C OLED display
-- Seeed Studio XIAO RP2040
-- Custom-designed PCB
-- Custom front and back silkscreen artwork
-- 3D-printed two-part enclosure
-- Programmable keys using CircuitPython
+today i selected i want to do a hackpad projecct so i got to work and selected what components i wanted to use what keycaps buttons mcu display after everything was selected i designed a neat schematic in kicad routed the pcb and completed the bill of materials 
 
 ---
 
-## Project Preview
+![PCB Front](images/pcbtop.png)
 
-### Enclosure
 
+#november 16 2026 issues with pcb and started designing the case 
+
+today when looking at the pcb schematic i noticed problem with xiao library in kicad not loading properly after watching so much yt videos i fixed the issue by reinstalling the xiao library after fixing that i got started to design the case that fits for the pcb with cutouts for display and all the keys
 
 
 ![HackPad Case Side](images/caseside.png)
@@ -29,15 +25,11 @@ The project was designed from scratch, including the schematic, PCB layout, cust
 
 ---
 
-## PCB
-
-The PCB was designed in KiCad and contains the complete hardware for the HackPad, including the 3×3 switch matrix, rotary encoder, OLED display, and Seeed Studio XIAO RP2040.
+#november 17 2026      Checked everything ready to submit
 
 
-The front of the PCB contains the main components and custom silkscreen artwork, including the Hack Club flag and other design elements.
+ ran simulations today every part is working all the 3d models fitted successfully and everything's done all the parts list and pricing is under budget I am ready to submit my work
 
-### Back Artwork
-![PCB Front](images/pcbtop.png)
 ![PCB Back](images/pcbback.png)
 
 The back of the PCB features large custom monochrome artwork integrated directly into the PCB silkscreen.
