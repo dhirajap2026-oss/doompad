@@ -1,97 +1,37 @@
-# HackPad
-
-HackPad is a custom-built 9-key macropad featuring a rotary encoder, an OLED display, a custom-designed PCB, and a fully 3D-printed enclosure.
-
-The project was designed from scratch, including the schematic, PCB layout, custom PCB artwork, enclosure, and firmware.
-
-#novemer 15 2026   selected components and completed pcb designing succesfully
-time spent - 4 hours 
-
-today i selected i want to do a hackpad projecct so i got to work and selected what components i wanted to use what keycaps buttons mcu display after everything was selected i designed a neat schematic in kicad routed the pcb and completed the bill of materials 
-
+---
+title: "doompad x1"
+github: "https://github.com/dhirajap2026-oss/doompad"
+description: "its a custom hackpad with custom firmware "
+created_at: "2026-11-15"
+total_time: "11h"
 ---
 
-![PCB Front](images/pcbtop.png)
+# November 15, 2026: completed pcb and bom
+<!-- fabricate:entry 3042 -->
 
+chose what components i needed to use after choosing i checked prices and copied links for all the products and then setted up the right kicad environment for our hackpad added all the parts in schematic editor had some trial and error with xiao library but it was alright routed all the components to its desired connection and the got to genrating and routing the pcb the pcb was done succesfully then got to make bill of materials 
 
-#november 16 2026 issues with pcb and started designing the case 
+![](https://fabricate.hackclub-assets.com/255d3d10cf97d652b4754451fb8b6e243ea232c68679e78f3f231dcf50029aa1/image-jpeg/doom.JPG)
 
-today when looking at the pcb schematic i noticed problem with xiao library in kicad not loading properly after watching so much yt videos i fixed the issue by reinstalling the xiao library after fixing that i got started to design the case that fits for the pcb with cutouts for display and all the keys
+**Total time spent: 4h**
 
+# November 16, 2026: issues with pcb and starting design on case
+<!-- fabricate:entry 3204 -->
 
-![HackPad Case Side](images/caseside.png)
+had some size issues with pcb the xiao boards pins were going outside the boards size that problem was solved in under 2 hours then got to design 3d case for the hackpad first i did the top side of the case got the sizes from online datasheets for components spaced out right lenghts for keys mcu and rotary encoder
+also added a cutout for display
 
-![HackPad Case Back](images/caseback.png)
+![](https://fabricate.hackclub-assets.com/0a4d40d2c6269aa46ab8f3e4a0742753c1466f08395944b183eafa9b95dfd7f8/image-png/casetop.png)
+![](https://fabricate.hackclub-assets.com/7fd8209564b9e3cfce490832ea966c02357da7554faa9a81caf90138c82b6d3c/image-jpeg/topview.JPG)
 
----
+**Total time spent: 5h**
 
-#november 17 2026      Checked everything ready to submit
+# November 17, 2026: Checked everything ready to submit
+<!-- fabricate:entry 3281 -->
 
+I ran simulations today every part is working all the 3d models fitted successfully and everything's done all the parts list and pricing is under budget  I am ready to submit my work 
 
- ran simulations today every part is working all the 3d models fitted successfully and everything's done all the parts list and pricing is under budget I am ready to submit my work
+![](https://fabricate.hackclub-assets.com/da8712175087598c60608b0d897c404bbceed179ebe36d42a26e29e2e5f568aa/image-png/41452.png)
+![](https://fabricate.hackclub-assets.com/0a4d40d2c6269aa46ab8f3e4a0742753c1466f08395944b183eafa9b95dfd7f8/image-png/casetop.png)
 
-![PCB Back](images/pcbback.png)
-
-The back of the PCB features large custom monochrome artwork integrated directly into the PCB silkscreen.
-
----
-
-## Hardware
-
-| Component | Quantity |
-|---|---:|
-| Seeed Studio XIAO RP2040 | 1 |
-| Mechanical switches | 9 |
-| Keycaps | 9 |
-| Rotary encoder | 1 |
-| 0.91-inch I2C OLED display | 1 |
-| Diodes | 9 |
-| Custom PCB | 1 |
-| 3D-printed top enclosure | 1 |
-| 3D-printed bottom enclosure | 1 |
-| M3 screws | 6 |
-| M3 heat-set inserts | 6 |
-
----
-
-## Firmware
-
-The firmware is written in CircuitPython and is located in:
-
-`Firmware/main.py`
-
-The firmware handles the 9 mechanical switches, rotary encoder, OLED display, and macropad functionality.
-
-To use the firmware, install CircuitPython on the XIAO RP2040 and copy the required libraries and `main.py` to the board.
-
----
-
-## Repository Structure
-
-```text
-HackPad/
-├── CAD/
-│   └── Hackpadoverall.step
-│
-├── Firmware/
-│   └── main.py
-│
-├── PCB/
-│   ├── Hackpad.kicad_pcb
-│   ├── Hackpad.kicad_pro
-│   └── Hackpad.kicad_sch
-│
-├── Production/
-│   ├── Bottom.stl
-│   ├── Top.stl
-│   ├── gerbers.zip
-│   └── main.py
-│
-├── images/
-│   ├── caseback.png
-│   ├── caseside.png
-│   ├── casetop.png
-│   ├── pcbback.png
-│   └── pcbtop.png
-│
-└── README.md
+**Total time spent: 2h**
